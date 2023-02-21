@@ -64,11 +64,7 @@ To run this program you will require a bunch of API keys. Register your API key 
   </ul>
   
 ## Code Structure
-      ├── driver
-      ├── Jarvis              # Main folder for features 
-      │   ├── config          # Contains all secret API Keys
-      │   ├── features        # All functionalities of JARVIS 
-      │   └── utils           # GUI images
+      
       ├── __init__.py         # Definition of feature's functions
       ├── DictApp.py          # opening and closing of all applications and browser tabs function
       ├── GreetUser.py        # function to greet user according to time
