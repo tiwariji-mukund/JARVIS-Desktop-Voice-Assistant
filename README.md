@@ -3,31 +3,35 @@ This was my attempt to make a voice assistant similar to JARVIS (in iron man mov
 Let's be honest, it's not as intelligent as in the movie, but it can do a lot of cool things and automate your daily tasks you do on your personal computers/laptops.<br>
 
 ## Built With
-<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" height=50 />
+<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" height=50 /> <img src="https://raw.githubusercontent.com/github/explore/d8574c7bce27faa27fb879bca56dfe351ee66efd/topics/pycharm/pycharm.png" height=50 />  <img src="https://avatars.githubusercontent.com/u/684879?s=280&v=4" height=50 />
 
 ## Features
-It can do a lot of cool things, some of them being:<br>
+It can do a lot of cool things, some of them being:
 <ul>
   <li> Greet user</li>
-<li> Tell current time and date</li>
-<li> Launch applications/softwares</li>
-<li> Open any website</li>
-<li> Tells about weather of any city</li>
-<li> Open location of any place plus tells the distance between your place and queried place</li>
-<li> Tells your current system status (RAM Usage, battery health, CPU usage)</li>
-<li> Tells about your upcoming events (Google Calendar)</li>
-<li> Tells about any person (via Wikipedia)</li>
-<li> Can search anything on Google</li>
-<li> Can play any song on YouTube</li>
-<li> Tells top headlines (via Times of India)</li>
-<li> Plays music</li>
-<li> Calculate any mathematical expression (example: Jarvis, calculate x + 135 - 234 = 345)</li>
-<li> Answer any generic question (via Wolframalpha)</li>
-<li> Take important note in notepad</li>
-<li> Tells a random joke</li>
-<li> Tells the latest news</li>
-<li> Can take screenshot and save it with custom filename</li>
-<li> Has a cool Graphical User Interface</li>
+  <li> Tell current time and date</li>
+  <li> Launch applications/softwares</li>
+  <li> Open any website</li>
+  <li> Tells about weather of any city</li>
+  <li> Open location of any place plus tells the distance between your place and queried place</li>
+  <li> Tells your current system status (RAM Usage, battery health, CPU usage)</li>
+  <li> Tells about your upcoming events (Google Calendar)</li>
+  <li> Tells about any person (via Wikipedia)</li>
+  <li> Can search anything on Google</li>
+  <li> Can play any song on YouTube</li>
+  <li> Tells top headlines</li>
+  <li> WhatsApp automation</li>
+  <li> Can handle browser on your voice command</li>
+  <li> Plays music</li>
+  <li> Can play game on the console which you build</li>
+  <li> Calculate any mathematical expression (example: Jarvis, calculate x + 135 - 234 = 345)</li>
+  <li> Answer any generic question (via Wolframalpha)</li>
+  <li> Take important note in notepad</li>
+  <li> Tells a random joke</li>
+  <li> Tells the latest news</li>
+  <li> Tells the latest cricket score</li>
+  <li> Can take screenshot and save it with custom filename</li>
+  <li> Has a cool Graphical User Interface</li>
 </ul>
 
 ## API Keys
@@ -66,9 +70,18 @@ To run this program you will require a bunch of API keys. Register your API key 
       │   ├── features        # All functionalities of JARVIS 
       │   └── utils           # GUI images
       ├── __init__.py         # Definition of feature's functions
-      ├── gui.ui              # GUI file (in .ui format)
-      ├── main.py             # main driver program of Jarvis
-      ├── requirements.txt    # all dependencies of the program
+      ├── DictApp.py          # opening and closing of all applications and browser tabs function
+      ├── GreetUser.py        # function to greet user according to time
+      ├── INTRO.py            # beautiful GUI runs whenever we open the project
+      ├── SearchNow.py        # all search functions for google, youtube and wikipedia
+      ├── WhatsApp.py         # WhatsApp automation function
+      ├── calculate.py        # function for solving arithmetic questions
+      ├── game.py             # game file to play game on console
+      ├── jarvis_main.py      # main driver program of Jarvis
+      ├── installer.py        # all packages required
+      ├── remember.txt        # all upcoming events
+      ├── newsRead.py         # read news function
+      ├── keyboard.py         # automate browser through voice command
    
   
 ## Future Improvements
