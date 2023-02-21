@@ -11,24 +11,7 @@ from plyer import notification
 from pygame import mixer
 import pyjokes
 
-#
-# '''setting password for our project'''
-# for i in range(3):
-#     a = input("Enter password to start the program: ")
-#     pw_file = open("password.txt", "r")
-#     pw = pw_file.read()
-#     pw_file.close()
-#
-#     if (a == pw):
-#         print("Welcome! Now give the hot-word command to start the program")
-#         break
-#
-#     elif (i == 2 and a != pw):
-#         print("Password input incorrect. Could not load/start the program")
-#         exit()
-#
-#     elif (a != pw):
-#         print("Try Again")
+
 
 # INTRO GIF
 from INTRO import play_gif
@@ -210,9 +193,7 @@ if __name__ == "__main__":
 
                         if time_now == time:
                             speak("Time to wake up, sir")
-                            playsound(r"C:\Users\Mukund\PycharmProjects\Project_Jarvis\Downloads\music.mp3")
-                            playsound(r"C:\Users\Mukund\PycharmProjects\Project_Jarvis\Downloads\music.mp3")
-
+                            playsound(r"C:\Users\UserName\PycharmProjects\Project_Jarvis\Downloads\music.mp3")
 
                         elif time_now > time:
                             speak("Alarm closed, sir")
@@ -303,7 +284,7 @@ if __name__ == "__main__":
                     speak("Do you want to clear old tasks (Yes or No)")
                     query = takeCommand().lower()
                     if "yes" in query:
-                        file = open(r"C:\Users\Mukund\PycharmProjects\Project_Jarvis\tasks.txt", 'w')
+                        file = open(r"C:\Users\UserName\PycharmProjects\Project_Jarvis\tasks.txt", 'w')
                         file.write(f"")
                         file.close()
 
@@ -311,7 +292,7 @@ if __name__ == "__main__":
                         i = 0
                         for i in range(no_tasks):
                             tasks.append(input(f"Enter task {i}: "))
-                            file = open(r"C:\Users\Mukund\PycharmProjects\Project_Jarvis\tasks.txt", 'a')
+                            file = open(r"C:\Users\UserName\PycharmProjects\Project_Jarvis\tasks.txt", 'a')
                             file.write(f"{i}. {tasks[i]} \n")
                             file.close()
 
@@ -320,19 +301,17 @@ if __name__ == "__main__":
                         i = 0
                         for i in range(no_tasks):
                             tasks.append(input(f"Enter task {i}: "))
-                            file = open(r"C:\Users\Mukund\PycharmProjects\Project_Jarvis\tasks.txt", 'a')
+                            file = open(r"C:\Users\UserName\PycharmProjects\Project_Jarvis\tasks.txt", 'a')
                             file.write(f"{i}. {tasks[i]} \n")
                             file.close()
 
                 # show schedule
                 elif "show my schedule" in query:
-                    file = open(r"C:\Users\Mukund\PycharmProjects\Project_Jarvis\tasks.txt", 'r')
-                    # file = open(r"C:\Users\Ankush\PycharmProjects\Project_Jarvis\tasks.txt", 'r')
+                    file = open(r"C:\Users\UserName\PycharmProjects\Project_Jarvis\tasks.txt", 'r')
                     content = file.read()
                     file.close()
                     mixer.init()
-                    mixer.music.load(r"C:\Users\Mukund\PycharmProjects\Project_Jarvis\Downloads\notification.mp3")
-                    # mixer.music.load(r"C:\Users\Ankush\PycharmProjects\Project_Jarvis\Downloads\notification.mp3")
+                    mixer.music.load(r"C:\Users\UserName\PycharmProjects\Project_Jarvis\Downloads\notification.mp3")
                     mixer.music.play()
 
                     notification.notify(
@@ -360,8 +339,7 @@ if __name__ == "__main__":
                     speak(f"Current match is going on between {team1} and {team2}")
 
                     mixer.init()
-                    mixer.music.load(r"C:\Users\Mukund\PycharmProjects\Project_Jarvis\Downloads\notification.mp3")
-                    # mixer.music.load(r"C:\Users\Ankush\PycharmProjects\Project_Jarvis\Downloads\notification.mp3")
+                    mixer.music.load(r"C:\Users\UserName\PycharmProjects\Project_Jarvis\Downloads\notification.mp3")
                     mixer.music.play()
 
                     notification.notify(
@@ -375,15 +353,14 @@ if __name__ == "__main__":
 
                 elif "screenshot" in query:
                     im = pyautogui.screenshot()
-                    im.save(r"C:\Users\Mukund\PycharmProjects\Project_Jarvis\ss.jpg")
-                    # im.save(r"C:\Users\Ankush\PycharmProjects\Project_Jarvis\ss.jpg")
+                    im.save(r"C:\Users\UserName\PycharmProjects\Project_Jarvis\ss.jpg")
 
-                # whatsapp automation
-                # elif "whatsapp" or "whats app" in query:
-                #     from WhatsApp import send_message
-                #
-                #     send_message()
-                #     break
+                whatsapp automation
+                elif "whatsapp" or "whats app" in query:
+                    from WhatsApp import send_message
+                
+                    send_message()
+                    break
 
                 elif "take a picture" in query:
                     pyautogui.press("super")
