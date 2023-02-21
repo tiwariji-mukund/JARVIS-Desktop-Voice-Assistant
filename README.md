@@ -37,9 +37,9 @@ It can do a lot of cool things, some of them being:<br>
 
 To run this program you will require a bunch of API keys. Register your API key by clicking the following links<nr><br>
 <ul>
-  <li> <a href="#">OpenWeatherMap API</a></li>
-  <li> <a href="#">Wolframalpha</a></li>
-  <li> <a href="#">Google Calendar API</a></li>
+  <li> <a href="https://openweathermap.org/api">OpenWeatherMap API</a></li>
+  <li> <a href="https://www.wolframalpha.com/">Wolframalpha</a></li>
+  <li> <a href="https://newsapi.org/">News API</a></li>
 </ul>
   
 ## Installation
