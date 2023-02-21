@@ -21,15 +21,12 @@ It can do a lot of cool things, some of them being:<br>
 <li> Can play any song on YouTube</li>
 <li> Tells top headlines (via Times of India)</li>
 <li> Plays music</li>
-<li> Send email (with subject and content)</li>
 <li> Calculate any mathematical expression (example: Jarvis, calculate x + 135 - 234 = 345)</li>
 <li> Answer any generic question (via Wolframalpha)</li>
 <li> Take important note in notepad</li>
 <li> Tells a random joke</li>
-<li> Tells your IP address</li>
-<li> Can switch the window</li>
+<li> Tells the latest news</li>
 <li> Can take screenshot and save it with custom filename</li>
-<li> Can hide all files in a folder and also make them visible again</li>
 <li> Has a cool Graphical User Interface</li>
 </ul>
 
@@ -78,5 +75,6 @@ To run this program you will require a bunch of API keys. Register your API key 
   <ul>
     <li> Generalized conversations can be made possible by incorporating Natural Language Processing</li>
     <li> GUI can be made more nicer to look at and functional</li>
+    <li> Security can be improved</li>
     <li> More functionalities can be added</li>
   </ul>
