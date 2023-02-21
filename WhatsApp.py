@@ -45,17 +45,18 @@ update = int((datetime.now() + timedelta(minutes=2)).strftime("%M"))
 
 def send_message():
     speak("Whom do you want to message, sir")
-    print("1 - Me\n2 - Papa")
+    # we can use dictionary for this or take input from the user      
+    print("1 - Me\n2 - Me2")
 
     a = int(input("Enter your choice: "))
 
     if a == 1:
         speak("What is the message to send, sir")
         message = str(input("Enter the message: "))
-        pywhatkit.sendwhatmsg("+919451721374", message, time_hour = strTime, time_min = update)
+        pywhatkit.sendwhatmsg("<Enter 10 digit mobile number>", message, time_hour = strTime, time_min = update)
 
 
     elif a == 2:
         speak("What's the message")
         message = str(input("Enter the message: "))
-        pywhatkit.sendwhatmsg("+919452446211", message, time_hour=strTime, time_min=update)
+        pywhatkit.sendwhatmsg("<Enter 10 digit mobile number>", message, time_hour=strTime, time_min=update)
