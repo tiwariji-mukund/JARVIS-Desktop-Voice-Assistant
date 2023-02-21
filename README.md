@@ -49,13 +49,7 @@ To run this program you will require a bunch of API keys. Register your API key 
 ## Installation
   
   <ul>
-    <li> First clone the repo</li>
-    <li> Make a config.py file and include the following in it:</li><br>
-  
-      email = "&lt;your_email&gt;"
-      email_password = "&lt;your_email_password&gt;"
-      wolframalpha_id = "&lt;your_wolframalpha_id&gt;
-    
+    <li> First clone the repo</li>    
    <li>Copy the config.py file in Jarvis>config folder</li>
    <li>Make a new python environment If you are using anaconda just type <code>conda create -n jarvis python==3.8.5</code> in anaconda prompt</li>
    <li>To activate the environment <code>conda activate jarvis</code></li>
