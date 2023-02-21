@@ -12,13 +12,11 @@ def play_gif():
     root.lift()
     root.attributes("-topmost", True)
     global img
-    img = Image.open(r"C:\Users\Mukund\PycharmProjects\Project_Jarvis\Downloads\jarvis.gif") # enter the gif address
-    # img = Image.open(r"C:\Users\Ankush\PycharmProjects\Project_Jarvis\Downloads\jarvis.gif")
+    img = Image.open(r"C:\Users\UserName\PycharmProjects\Project_Jarvis\Downloads\jarvis.gif") # enter the gif address
     lbl = Label(root)
     lbl.place(x=0, y=0)
     i = 0
-    mixer.music.load(r"C:\Users\Mukund\PycharmProjects\Project_Jarvis\Downloads\jarvis_Sound.mp3") #enter the music file address
-    # mixer.music.load(r"C:\Users\Ankush\PycharmProjects\Project_Jarvis\Downloads\jarvis_Sound.mp3")
+    mixer.music.load(r"C:\Users\UserName\PycharmProjects\Project_Jarvis\Downloads\jarvis_Sound.mp3") #enter the music file address
     mixer.music.play()
 
     for img in ImageSequence.Iterator(img):
