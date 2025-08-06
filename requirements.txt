@@ -1,0 +1,43 @@
+# JARVIS Desktop Voice Assistant - Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core Speech and Voice Processing
+pyttsx3==2.90
+SpeechRecognition==3.10.0
+pyaudio==0.2.11
+
+# Web Automation and Browsing
+pywhatkit==5.4
+requests==2.31.0
+beautifulsoup4==4.12.2
+webbrowser3==1.2
+
+# GUI and Multimedia
+tkinter==8.6
+Pillow==10.0.1
+pygame==2.5.2
+playsound==1.3.0
+
+# System Automation
+pyautogui==0.9.54
+pynput==1.7.6
+plyer==2.1.0
+
+# API Integrations
+wolframalpha==5.0.0
+wikipedia==1.4.0
+
+# Utilities
+python-decouple==3.8
+pyjokes==0.6.0
+
+# Translation and Text Processing
+googletrans==4.0.0rc1
+gtts==2.3.2
+
+# Optional - for voice models (if needed)
+vosk==0.3.45
+
+# Note: PyAudio may require special installation on Windows
+# Download wheel from: https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio
+# Then install with: pip install PyAudio-x.x.x-cpxx-cpxxm-win_amd64.whl
